@@ -8,9 +8,9 @@ const products = [
 ];
 
 const calculateTotalPrice = function (allProdcuts, productName) {
-  const data = { ...allProdcuts };
+  // const data = { ...allProdcuts };
 
-  for (const key in data) if (data[key].name === productName) return data[key].price * data[key].quantity;
+  for (const key in allProdcuts) if (allProdcuts[key].name === productName) return allProdcuts[key].price * allProdcuts[key].quantity;
 };
 
 console.log(calculateTotalPrice(products, 'Радар'));

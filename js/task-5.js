@@ -8,9 +8,9 @@ const products = [
   ];
   
   const getAllPropValues = function (arr, prop) {
-    const data = { ...arr };
+    // const data = { ...arr };
     const result = [];
-    for (const key in data) {
+    for (const key in arr) {
       if (arr[key][prop]) result.push(arr[key][prop]);
     }
     return result;
